@@ -1,0 +1,31 @@
+{
+    "name": "sempro/detect-user-agent",
+    "description": "Detects which user agent is being used by the current browser",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sempro as",
+            "email": "admin@sempro.no"
+        },
+        {
+            "name": "Runar Jørgensen",
+            "email": "ventrec@ventrec.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Sempro\\DetectUserAgent\\": "src/"
+        }
+    },
+    "require": {
+        "mobiledetect/mobiledetectlib": "^2.8"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sempro\\DetectUserAgent\\Providers\\DetectUserAgentServiceProvider"
+            ]
+        }
+    }
+}
